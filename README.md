@@ -10,7 +10,6 @@ O **Gerenciador de Asilo** é um sistema completo para gerenciamento de asilos, 
 
 - **Landing Page**: Apresenta informações sobre o asilo, serviços e informações de contato.
 - **Sistema de Contato**: Permite que os usuários entrem em contato com o asilo de forma prática.
-- **App de Gerenciamento**: Sistema dedicado aos administradores do asilo para gerenciar residentes, funcionários, pagamentos e outros aspectos operacionais.
 
 ## Tecnologias Utilizadas
 
@@ -26,9 +25,6 @@ O **Gerenciador de Asilo** é um sistema completo para gerenciamento de asilos, 
 - **Banco de Dados**:
   - PostgreSQL ou MySQL (banco de dados relacional)
   - Sequelize (ORM para Node.js)
-
-- **App**:
-  - React Native (ou Flutter) para a criação de apps para iOS e Android
 
 - **Versionamento**:
   - Git para controle de versão
