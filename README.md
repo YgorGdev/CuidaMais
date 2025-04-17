@@ -50,7 +50,46 @@ O **Gerenciador de Asilo** foi desenvolvido para facilitar a administração de 
 ## 📦 Estrutura do Projeto
 
 ```
-Será acrescentado
+cuidaMais/
+│
+│
+├── backend/
+│   ├── .env.example                # Variáveis de ambiente (exemplo)
+│   ├── server.js                   # Ponto de entrada da API
+│   └── src/
+│       ├── controllers/            # Lógica dos endpoints
+│       ├── models/                 # Modelos do banco de dados
+│       ├── routes/                 # Definição de rotas da API
+│       ├── services/               # Lógica de negócio (serviços)
+│       ├── middlewares/           # Middlewares de autenticação, erros, etc.
+│       └── config/                # Configurações do banco, JWT, etc.
+│
+│
+│
+├── frontend/
+│   ├── public/                    # Arquivos públicos do React
+│   ├── tailwind.config.js         # Configuração do Tailwind CSS
+│   └── src/
+│       ├── App.jsx                # Componente principal
+│       ├── assets/                # Imagens, fontes, ícones
+│       ├── components/            # Componentes reutilizáveis
+│       ├── pages/                 # Páginas principais da aplicação
+│       ├── hooks/                 # Hooks customizados
+│       ├── services/              # Integração com APIs (Axios, etc)
+│       └── contexts/              # Contextos globais (ex: auth, tema)
+│
+├── landing-page/
+│   ├── index.html                 # Landing page inicial
+│   ├── public/                    # Recursos públicos
+│   └── src/
+│       ├── components/            # Componentes reutilizáveis da landing
+│       └── sections/              # Seções como sobre, contato, serviços
+│
+├── docs/
+│   └── arquitetura.md             # Documentação técnica e decisões
+│
+├── .gitignore                     # Ignora node_modules, .env, etc.
+├── README.md                      # Documentação principal
 ```
 
 ---
