@@ -1,31 +1,47 @@
-# CuidaMais
-Gerenciador de Asilo: Sistema completo para o gerenciamento de asilos, incluindo uma landing page, sistema de contato.Com este sistema, os gestores do asilo podem controlar informações sobre residentes, funcionários, pagamentos .
+# 🏡 CuidaMais – Gerenciador de Asilo
 
+Sistema completo para o gerenciamento de asilos, incluindo uma landing page, sistema de contato e painel administrativo.  
+Com este sistema, os gestores podem controlar informações sobre **residentes**, **funcionários**, **pagamentos**, além de receber contatos externos de forma segura e eficiente.
 
-# Gerenciador de Asilo
+---
 
-O **Gerenciador de Asilo** é um sistema completo para gerenciamento de asilos, projetado para facilitar a administração, comunicação e controle de informações de residentes, funcionários e pagamentos. O projeto inclui uma **landing page**, um **sistema de contato** e um **aplicativo** dedicado ao gerenciamento do asilo, permitindo que os administradores possam acessar dados importantes e realizar tarefas essenciais de forma eficiente e segura.
+## 📌 Visão Geral
 
-## Funcionalidades
+O **Gerenciador de Asilo** foi desenvolvido para facilitar a administração de instituições de acolhimento, otimizando tarefas essenciais do dia a dia com acesso fácil e centralizado às informações. O sistema é composto por:
 
-- **Landing Page**: Apresenta informações sobre o asilo, serviços e informações de contato.
-- **Sistema de Contato**: Permite que os usuários entrem em contato com o asilo de forma prática.
+- **Landing Page**: Informações institucionais, serviços e formulário de contato.
+- **Sistema de Contato**: Canal direto de comunicação com o público.
+- **Painel de Administração**: Controle interno de residentes, equipe, finanças e relatórios.
 
-## Tecnologias Utilizadas
+---
 
-- **Frontend**:
-  - React (ou Next.js para renderização do lado do servidor)
-  - Tailwind CSS (ou Bootstrap) para estilização rápida e responsiva
-  - Axios para comunicação com o backend
-  
-- **Backend**:
-  - Node.js com Express (ou Django/Flask para quem preferir Python)
-  - JWT (JSON Web Tokens) para autenticação segura
+## 🚀 Funcionalidades
 
-- **Banco de Dados**:
-  - PostgreSQL ou MySQL (banco de dados relacional)
-  - Sequelize (ORM para Node.js)
+- Cadastro e gerenciamento de residentes
+- Controle de funcionários
+- Histórico de pagamentos e despesas
+- Integração com página de contato
+- Acesso seguro com autenticação
+- Interface responsiva e moderna
 
-- **Versionamento**:
-  - Git para controle de versão
-  - GitHub para hospedagem do código e colaboração
+---
+
+## 🧰 Tecnologias Utilizadas
+
+### **Frontend**
+- React
+- Tailwind CSS
+- Axios
+
+### **Backend**
+- Node.js + Express
+- JWT para autenticação
+
+### **Banco de Dados**
+- PostgreSQL
+- Sequelize ORM
+
+### **DevOps**
+- Git
+- GitHub
+
