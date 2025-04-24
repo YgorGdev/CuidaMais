@@ -53,6 +53,7 @@
  
  export const Title = styled.h1`
  font-weight: bold;
+ font-size: 1.9rem;
  margin: 0;
  `;
  
