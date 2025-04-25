@@ -52,44 +52,42 @@ O **Gerenciador de Asilo** foi desenvolvido para facilitar a administração de 
 ```
 cuidaMais/
 │
-│
 ├── backend/
-│   ├── .env.example                # Variáveis de ambiente (exemplo)
-│   ├── server.js                   # Ponto de entrada da API
+│   ├── .env.example              # Arquivo de variáveis de ambiente exemplo
+│   ├── package.json              # Dependências e scripts do backend
+│   ├── server.js                 # Ponto de entrada da API
 │   └── src/
-│       ├── controllers/            # Lógica dos endpoints
-│       ├── models/                 # Modelos do banco de dados
-│       ├── routes/                 # Definição de rotas da API
-│       ├── services/               # Lógica de negócio (serviços)
-│       ├── middlewares/           # Middlewares de autenticação, erros, etc.
-│       └── config/                # Configurações do banco, JWT, etc.
-│
-│
+│       ├── config/               # Configurações do Sequelize, JWT, etc.
+│       ├── controllers/          # Lógica dos endpoints (ex: auth, user, residentes)
+│       ├── middlewares/         # Middlewares globais (ex: autenticação)
+│       ├── models/              # Modelos do banco de dados
+│       ├── routes/              # Definição das rotas da aplicação
+│       └── services/            # Regras de negócio reutilizáveis
 │
 ├── frontend/
-│   ├── public/                    # Arquivos públicos do React
-│   ├── tailwind.config.js         # Configuração do Tailwind CSS
+│   ├── public/                   # Arquivos estáticos
+│   ├── tailwind.config.js        # Configuração do Tailwind
 │   └── src/
-│       ├── App.jsx                # Componente principal
-│       ├── assets/                # Imagens, fontes, ícones
-│       ├── components/            # Componentes reutilizáveis
-│       ├── pages/                 # Páginas principais da aplicação
-│       ├── hooks/                 # Hooks customizados
-│       ├── services/              # Integração com APIs (Axios, etc)
-│       └── contexts/              # Contextos globais (ex: auth, tema)
+│       ├── App.jsx               # Componente raiz da aplicação
+│       ├── assets/              # Imagens, ícones e outros recursos
+│       ├── components/          # Componentes reutilizáveis
+│       ├── contexts/            # Contextos globais (ex: autenticação)
+│       ├── hooks/               # Hooks customizados
+│       ├── pages/               # Páginas da aplicação (dashboard, login, etc.)
+│       └── services/            # Serviços de requisições (Axios, etc.)
 │
 ├── landing-page/
-│   ├── index.html                 # Landing page inicial
-│   ├── public/                    # Recursos públicos
+│   ├── index.html                # Landing page estática
 │   └── src/
-│       ├── components/            # Componentes reutilizáveis da landing
-│       └── sections/              # Seções como sobre, contato, serviços
+│       ├── components/           # Componentes reutilizáveis da landing
+│       └── sections/            # Seções como sobre, serviços, contato
 │
 ├── docs/
-│   └── arquitetura.md             # Documentação técnica e decisões
+│   └── arquitetura.md            # Documentação técnica do projeto
 │
-├── .gitignore                     # Ignora node_modules, .env, etc.
-├── README.md                      # Documentação principal
+├── .gitignore                    # Arquivos/pastas a serem ignorados pelo Git
+├── README.md                     # Este documento de documentação principal
+
 ```
 
 ---
