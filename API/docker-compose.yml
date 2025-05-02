@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  api:
+    container_name: cuidamais-api
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    image: cuidamais-api
+    restart: unless-stopped
+    working_dir: /usr/src/app
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - '3000:3000'  # Porta local:porta do container
+    networks:
+      - cuidamais-network
+    environment:
+      NODE_ENV: development
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: ${DB_DATABASE:-cuidamais}
+      DB_USER: ${DB_USERNAME:-cuidamais}
+      DB_PASS: ${DB_PASSWORD:-root}
+    command: npm run dev
+    depends_on:
+      - db
+
+  db:
+    container_name: cuidamais-postgres
+    image: postgres:15
+    restart: unless-stopped
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: ${DB_DATABASE:-cuidamais}
+      POSTGRES_USER: ${DB_USERNAME:-cuidamais}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-root}
+    volumes:
+      - ./docker/postgres/data:/var/lib/postgresql/data
+    networks:
+      - cuidamais-network
+
+networks:
+  cuidamais-network:
+    driver: bridge
