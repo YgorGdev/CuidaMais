@@ -1,4 +1,4 @@
-const { Registro } = require('../models');
+const { Registro } = require('../models/Registro');
 
 
 class SaidaController {

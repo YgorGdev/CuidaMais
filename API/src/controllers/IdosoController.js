@@ -1,4 +1,4 @@
-const { Idoso } = require('../models');
+const { Idoso } = require('../models/Idoso');
 
 
 class IdosoController {

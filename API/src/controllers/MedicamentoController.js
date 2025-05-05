@@ -1,4 +1,4 @@
-const { Medicamento } = require('../models');
+const { Medicamento } = require('../models/Medicamento');
     
     
 class MedicamentoController {
