@@ -1,4 +1,4 @@
-const { Medicamento } = require('../models');
+const { Medicamento } = require('../models/Medicamento');
     
     
 class MedicamentoController {
@@ -29,6 +29,23 @@ class MedicamentoController {
       } catch (error) {
           return res.status(400).json({ error: error.message });
       }
+  }
+
+  async deletarMedicamentos(req, res) {
+    try {
+        const { id } = req.params;
+        
+        const medicamento = await Medicamento.findByPk(id);
+        
+        if (!medicamento) {
+            return res.status(404).json({ error: 'Medicamento não encontrado' });
+        }
+
+        await medicamento.destroy();
+        return res.status(200).json({ message: 'Medicamento deletado com sucesso' }); 
+    } catch (error) {
+        return res.status(400).json({ error: error.message });
+    }
   }
 }
 
